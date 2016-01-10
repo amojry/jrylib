@@ -1,0 +1,13 @@
+stratified_sampling.py
+	根据频率2^n次方的区域进行分桶；
+	每个分桶的样本数根该桶内的所有样本频率总和 占全局频率的占比进行抽样；
+
+distributed_sampling.py
+	根据频率分布，以单个样本作为维度进行抽样；
+	抽样频率为被抽样的次数；
+
+两个脚本的输入都为：
+sample_content \t original_frequency
+
+输出均为:
+sample_content \t original_frequency \t sample_frequency
